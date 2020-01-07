@@ -5,8 +5,7 @@ console.log (a,b)
 
 //var e let criam variáveis, mas há diferença entre elas
 //regra geral: usar o Let
-//se declara variável uma única vez no escopo->let
-//no var vc pode redeclarar a variável dentro do mesmo escopo
+//let pode alterar variável
 
 //atribuir constante : não muda o valor dentro do programa
 const c = 5
