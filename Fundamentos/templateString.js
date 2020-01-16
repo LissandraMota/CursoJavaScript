@@ -1,7 +1,7 @@
 const nome = "Rebeca"
 const concatenacao = "Olá " + nome + "!"
 // template começa som o síbolo da crase e termina com o símbolo
-// o template string suporta quera de linha, astring normal não
+// o template string suporta quebra de linha, a string normal não
 // o que está dentro de ${} é interpolado
 const template = ` 
 Olá
