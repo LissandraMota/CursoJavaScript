@@ -1,6 +1,6 @@
 const schedule = require("node-schedule")
 
-const tarefa1 = schedule.scheduleJob('*/5 * 20 * * 2', function () {
+const tarefa1 = schedule.scheduleJob('*/5 * 21 * * 2', function () {
     console.log("Executando tarefa 1!", new Date().getSeconds())
 })
 
@@ -14,7 +14,7 @@ setTimeout(function (){
 
 const regra = new schedule.RecurrenceRule()
 regra.dayOfWeek = [new schedule.Range(1, 5)]
-regra.hour = 20
+regra.hour = 21
 regra.second = 30
 
 const tarefa2 = schedule.scheduleJob(regra, function() {
