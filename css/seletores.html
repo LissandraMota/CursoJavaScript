@@ -6,7 +6,59 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /*
+        *{
+            color:#B0E0E6;
+            background-color: #FAEBD7;
+        }
+        universal seleciona todo mundo
+        */
+        #aprovados {
+            color: 	#A52A2A;
+            background-color:	#FA8072;
+        }
+
+        #aninhado > div {
+            color: 	#FFE4C4;
+            background-color: #BC8F8F;
+        }
+
+        
+        #aninhado section {
+            color: brown;
+            background-color: 	#DEB887;
+        }
+        
+
+        p + ul{
+            color: #FFA07A;
+            background-color: #A52A2A;
+        }
+
+        /*
+        p ~ ol {
+            color: #FFA07A;
+            background-color:#E6E6FA;
+        }
+        */
+
+        [feira] {
+            color:#7B68EE;
+            background-color: 	#E0FFFF;
+        }
+
+        span:nth-child(1) {
+            color:	#E0FFFF;
+            background-color:	#D8BFD8;
+        }
+
+        /* (odd)-filhos pares */
+        section >:nth-child(even) {
+            color: rgba(139, 0, 139, 0.473);
+            background-color: #FFEFD5;
+        }
+
+
     </style>
 </head>
 
@@ -29,7 +81,7 @@
             </ol>
             <div id='aninhado' class='tag'>
                 <div class="tag">
-                    <section class='tag'>
+                    <section class='tag nolabel'>
                         <span class='tag'>1</span>
                         <p class='tag'>2</p>
                         <span class='tag'>3</span>

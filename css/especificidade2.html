@@ -6,11 +6,25 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://specificity.keegan.st/ */
+        /*
+        1. inline --> mais específico
+        2. ID
+        3. classe, pseudo-classe, atributo
+        4. elementos, pseudo-elementos
+        */
+        body {font-size: 40px;}
+
+        div {background-color: deeppink;}
+        div[wm-cor] {background-color: deepskyblue;}
+       /*mesma nível de especifidade da div[wm-cor] se tivesse em ordem inversa não ia funcionar na div[wm-cor]*/
+        div.estilo {background-color: purple;}
+        #unico1, #unico2 {background-color: 	#FF7F50;}
+        div:hover, #unico1:hover, #unico2:hover {background-color: palevioletred;}
     </style>
 </head>
 
 <body>
-    <div id="unico1" class="estilo">
+    <div id="unico1" class="estilo" style="background-color: 	#FFDAB9;">
         #unico1 vs .estilo vs inline
     </div>
     <div id="unico2" class="estilo">#unico2 vs .estilo</div>

@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <title>Herança</title>
     <style>
-        /* ... */
+        body {
+            font-family: monospace;
+            font-size: 40px;
+            border: solid purple; /* não é transmitida por herança, por padrão*/
+            padding: 50px;
+        }
+
+        div {
+            border: inherit; /*palavra pra herdar*/
+            padding: inherit;
+        }
     </style>
 </head>
 
