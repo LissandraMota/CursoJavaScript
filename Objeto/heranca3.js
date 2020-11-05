@@ -8,23 +8,23 @@ console.log(filha1.corCabelo)
 
 const filha2 = Object.create(pai, {
     nome: {value: "Luna", writable: false, //não vai aceitar ser mudado
-      enumerable: true}
+      enumerable: true} //permite ser listado
 })
 
 console.log(filha2.nome)
-filha2.nome = "Carla"
+filha2.nome = "Carla" //não muda para carla - writable = false
 console.log(`${filha2.nome} tem cabelo ${filha2.corCabelo}`)
 
-console.log(Object.keys(filha1))
+console.log(Object.keys(filha1)) //chave
 console.log(Object.keys(filha2))
 
-for(let key in filha2){
+for(let key in filha2){ //todos os atributos sendo impressos
     console.log(key)
 }
 
 
-// forma de saber se determinado atributo veio pelo próprio obj u por herança --> for in
+// forma de saber se determinado atributo veio pelo próprio obj ou por herança --> for in
 for(let key in filha2){
-   filha2.hasOwnProperty(key) ?
+   filha2.hasOwnProperty(key) ? //hasOwnProperty - se a propriedade pertence a filha 2
    console.log(key) : console.log(`Por herança: ${key}`)
 }

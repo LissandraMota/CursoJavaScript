@@ -1,3 +1,4 @@
+//se der verdaeiro a primeira parte vai ser retornada
 const resultado = nota => nota >= 7 ? "aprovado" : "reprovado"
 
 console.log(resultado(7.1))

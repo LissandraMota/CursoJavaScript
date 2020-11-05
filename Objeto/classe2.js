@@ -5,8 +5,9 @@ class avo {
     }
 }
 
+//pai tem como protótipo avo
 class pai extends avo {
-    constructor(sobrenome, profissao = "professor"){
+    constructor(sobrenome, profissao = "professor"){ //se a profissão não for passada vai assumir a profissão padrão
         super(sobrenome) //chama a função construtora de avo (super classe)
         this.profissao = profissao
     }
@@ -14,7 +15,7 @@ class pai extends avo {
 
 class filho extends pai {
     constructor() {
-        super("Silva")
+        super("Silva") //chama a função construtora de avo (super classe)
     }
 }
 

@@ -6,6 +6,7 @@ const alunos = [
 ]
 
 // todos os alunos são bolsistas? 
+//funcão - recebe resultado (callback v ou F) e bolsista
 const todososBolsistas = (resultado, bolsista) => resultado && bolsista
 console.log(alunos.map(b => b.bolsista).reduce(todososBolsistas))
 

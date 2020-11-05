@@ -1,8 +1,9 @@
+//functio factory - retorna objeto
 function criarProduto (nome, preco){
     return{
         nome, 
         preco,
-        desconto: 0.1
+        desconto: 0.1 //fixo, padrão
     }
 }
 

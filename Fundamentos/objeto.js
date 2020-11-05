@@ -1,6 +1,7 @@
 const produto1 = {} //barra de chave - {} representa de forma literal um objeo, da mesma forma que [] representa um array
 //pode criar um objeto de forma vazia e fazer suas aribuições de forma dinâmica:
-produto1.nome = "celular ultra mega"
+// objeto junção de chave e valor
+produto1.nome = "celular ultra mega"  //o atrbuto nome e seu valor foi criado dinamicamente
 produto1.preco = 4998.90
 
 console.log(produto1)

@@ -11,7 +11,7 @@ const volvo = {
     velMax : 200
 }
 
-console.log(ferrari.__proto__) // 2 underline em cada lado
+console.log(ferrari.__proto__) // 2 underline em cada lado __proto__ -> a partir disso consegue acessar o objeto pai (protoitpo)
 // consegue acessar o protótipo do objeto ferrari, do obj "pai"
 // mostrou que o protótipo de ferrari é um obj vazio, mas existe, está presente
 
@@ -19,7 +19,7 @@ console.log(ferrari.__proto__ === Object.prototype)
 console.log(volvo.__proto__ === Object.prototype)
 // ambos protótipos dos objetos ferrari e volvo apontam para o mesmo Object.prototype
 
-console.log(Object.prototype.__proto__)
+console.log(Object.prototype.__proto__) //aponta pra null
 
 function MeuObjeto(){}
 console.log(typeof Object, typeof MeuObjeto)

@@ -1,6 +1,7 @@
-// o this na função arrow é baseado no contexto no ual a função foi escrita
-// na função arrow o this não modifica
+// o this na função arrow é baseado no contexto no qual a função foi escrita
+// na função arrow o this não modifica - this constante
 
+//arrow function
 function Pessoa(){
     this.idade = 0
 

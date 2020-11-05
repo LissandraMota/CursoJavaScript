@@ -4,14 +4,15 @@ class Pessoa {
   }
 
   falar() {
-      console.log(`Meu nome é ${this.nome}`)
+      console.log(`Meu nome é ${this.nome}`) //usa o this para acessar o obj instanciado
   }
 }
 
 const p1 = new Pessoa("João")
 p1.falar()
 
-
+//função factory - return um obj
+//arrow fuction
 const criarpessoa = nome => {
     return{
         falar: () => console.log(`Meu nome é ${nome}`)

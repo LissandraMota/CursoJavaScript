@@ -1,15 +1,17 @@
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9] 
+
 //x é o índice do array
 for (x in nums) {
     if(x == 5) {
-        break
+        break //usa o bloco mais próximo que ele suporte, no caso o for
+        // interrompe e sai
     }
     console.log(`${x} = ${nums[x]}`)
 }
 
 for(y in nums){
     if(y ==5 ) {
-        continue
+        continue //interrompe a execução e continua
     }
     console.log(`${y} = ${y}`)
 }

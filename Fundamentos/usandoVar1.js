@@ -21,5 +21,6 @@ function teste() {
     console.log(local)
 }
 teste()
-//console.log(logal) aqui não dar certo pq a variável dntro do escopo não está visível, o console.log tem que ficar dentro do escopo
+//console.log(local) aqui não dar certo pq a variável dentro do escopo não está visível, o console.log tem que ficar dentro do escopo
+//pq foi definifo uma variável dentro
 

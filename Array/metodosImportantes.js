@@ -8,20 +8,20 @@ console.log(pilotos)
 pilotos.shift() // remove o primeiro elemento do array
 console.log(pilotos)
 
-pilotos.unshift("Hamilton") // add um elemento no início do array, no índice zero
+pilotos.unshift("Hamilton") // add um elemento no início do array, no índice zero, na primeira posição
 console.log(pilotos)
 
-// splice add e remover rlementos
+// splice add e remover elementos
 // adicionando
 pilotos.splice(2, 0, "Bottas", "Massa")
 console.log(pilotos)
 
 //removendo
-pilotos.splice(3, 1) //removeu o massa
+pilotos.splice(3, 1) //removeu o massa - a partir do índice 3 (massa), remove 1 elemento
 console.log(pilotos)
 
 // slice --->retorna um novo array
-const algunsPilotos1 = pilotos.slice(2) // aqui vai pegar a partir no índice 2 os elemento e faer um novo array
+const algunsPilotos1 = pilotos.slice(2) // aqui vai pegar a partir no índice 2 os elemento e fazer um novo array
 console.log(algunsPilotos1)
 
 const algunsPilotos2 = pilotos.slice(1, 4) // pega o índice 1 até o 4 MAS o 4 não entra, não é incluído

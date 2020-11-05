@@ -12,5 +12,6 @@ do {
     opcao = getInteiroAleatorioEntre (-1, 10)
     console.log(`Opção escolhida foi ${opcao}.`)
 } while (opcao != -1)  //expressão depois do bloco
+// só faz a verificação depois de executar
 
 console.log("Até a próxima!!")

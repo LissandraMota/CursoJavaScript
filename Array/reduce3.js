@@ -1,4 +1,4 @@
-// implmentando p´ropria versão do reduce
+// implmentando própria versão do reduce
 Array.prototype.reduce2 = function(callback, valorincial) {
     const indiceinicial = valorincial ? 0 : 1
     let acumulador = valorincial || this [0]

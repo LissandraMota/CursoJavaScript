@@ -1,3 +1,5 @@
+//flat map não existe nativamente no JS
+// flatmap --> Map com concat
 const escola = [{
     nome: "Turma M1",
     alunos: [{
@@ -18,8 +20,8 @@ const escola = [{
     }]
 }]
 
-const getNotaDoAluno = aluno => aluno.nota
-const getNotaDaTurma = turma => turma.alunos.map(getNotaDoAluno)
+const getNotaDoAluno = aluno => aluno.nota //idenpendente das turmas
+const getNotaDaTurma = turma => turma.alunos.map(getNotaDoAluno) //extraindo as notas da turma
 
 const notas1 = escola.map(getNotaDaTurma)
 console.log (notas1)
@@ -32,5 +34,5 @@ Array.prototype.flatMap = function(callback) {
     return Array.prototype.concat.apply([], this.map(callback))
 }
 
-const notas2 = escola.flatMap(getNotaDaTurma)
+const notas2 = escola.flatMap(getNotaDaTurma) // map + concat
 console.log(notas2)

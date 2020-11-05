@@ -5,3 +5,4 @@ var numero = 1
 }
 console.log("fora=", numero)
 // ambas vai dar igual pq não existe escopo para variável fora de function no JS
+//e por isso a variável está global

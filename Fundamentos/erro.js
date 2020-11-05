@@ -1,3 +1,5 @@
+//try -> bloco de código com algo que pode gerar erro
+//finally-> mesmo correndo erro ou não chama o finally
 function imprimirNomeGritado (obj) {
     try {
     console.log(obj.name.toUpperCase() + "!!!!")
@@ -16,5 +18,6 @@ function tratarErrorELancar(erro) {
   // throw tbm pode ser objeto
 }
 
-const obj = { nome: "Roberto"}
+//const obj = { nome: "Roberto"} //erro
+const obj = { name: "Roberto"} //certo, sem erro
 imprimirNomeGritado(obj)

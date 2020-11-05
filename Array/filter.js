@@ -1,4 +1,5 @@
 //filter -->filtra um array ex: quer do array só notas 9, recebe v ou f
+//filtar um array e fazer um subarray 
 //os elementos filtrados representam um novo array
 
 const produtos = [
@@ -12,7 +13,7 @@ const produtos = [
 // return false todos são filtrados array []
 //se colocar return true todos passam ---> nenhum elemento é filtrado
 console.log(produtos.filter(function (p) {
-    return p.preco > 2555
+    return p.preco > 2555 //retorna o que for true pra esse retorno
 }))
 
 // aparecendo só os produtos caros e frágeis 2 funções

@@ -14,13 +14,16 @@ const produto = {
 global.preco = 20
 global.desc = 0.1
 console.log(getPreco())
-console.log(produto.getPreco())
+console.log(produto.getPreco()) //chamando a partir do objeto produto
 
+//exemplo com call e apply
+//call e apply se diferenciam na forma de passar os parãmetros
 const carro = {preco: 49990, desc: 0.20}
 
 console.log(getPreco.call(carro))
 console.log(getPreco.apply(carro))
 
+//passando parâmetros call
 console.log(getPreco.call(carro, 0.17, "$"))
+//passando parâmetros apply
 console.log(getPreco.apply(carro, [0.17, "$"]))
-// a forma de passar parâmetros no call e no aply é diferente

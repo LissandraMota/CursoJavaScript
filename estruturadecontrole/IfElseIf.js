@@ -1,7 +1,11 @@
+//função 
+// acessar valor atual da variável a partir da variável this
 Number.prototype.entre = function(inicio, fim){
     return this >= inicio && this <= fim
 }
 
+// if e else if chamando a função 
+// só entra em uma dessas condições
 const imprimirResultado = function (nota) {
     if(nota.entre(9, 10)) {
         console.log("Quadro de honra")
@@ -11,9 +15,11 @@ const imprimirResultado = function (nota) {
         console.log("Recuperação")
     } else if(nota.entre(0, 3.99)) {
         console.log("Reprovado")
-    } else {
+    } else { // caso contrário
         console.log("Nota inválida")
     }
+
+    console.log("fim")
 }
 
 imprimirResultado(10)

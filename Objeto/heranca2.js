@@ -1,12 +1,12 @@
 // cadeia de protótipos (prototype chain) :
-Object.prototype.atrib1234 = "Topo da cadeia" // deve evitar esse tipo de manipulação
+//Object.prototype.atrib1234 = "Topo da cadeia" // deve evitar esse tipo de manipulação
 
 const avo = {atrib1 : "A"} //o avô tem como protótipo: Object.prototype
 const pai = {__proto__: avo, atrib2: "B", atrib3: "3"} // para referenciar que o pai tem como protótibo o avo, tem que atribuir ----> __proto__:avo
 const filho = {__proto__: pai, atrib3: "C"}
 console.log(filho.atrib1) //foi procurando o atrib1 na cadeia de protótipos
-console.log(filho.atrib0)
-console.log(filho.atrib1234)
+console.log(filho.atrib0) //undefined pois não há esse atributo nem no filho e nem por hereança
+//console.log(filho.atrib1234)
 console.log(filho.atrib2)
 console.log(filho.atrib3) //como encontrou na primeira cadeia de objeto não continua procurando
 //ocorre um sombreamento, como se fosse uma subescrita
@@ -38,15 +38,17 @@ const volvo = {
     }
 }
 
-//o super chama o método do protótipo
+//o super chama o método do próprio protótipo volvo
 
-Object.setPrototypeOf(ferrari, carro) // aqui estabeleci uma relação entre ferrari e carro
+Object.setPrototypeOf(ferrari, carro) // aqui estabeleci uma relação entre ferrari e carro - ferrari tem carro como protótipo
 // equivalente ao __proto__
 Object.setPrototypeOf(volvo, carro)
 
+//apenas os atributos locais
 console.log(ferrari)
 console.log(volvo)
 
+//com atributos de herença
 volvo.acelararMais(100)
 console.log(volvo.status())
 

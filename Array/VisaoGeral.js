@@ -1,7 +1,7 @@
 // no JS o array é um objeto
 // o array organiza os dados em indices, começando pelo zero
 // não existe no JS um tipo de dado nativo array
-// difernte de outras linguagens o array em JS é dinâmico e além como o JS é uma linguagem fracamente tipada, os tipos de dados que podem ser colocados no array ão os mais variávei possíveis
+// difernte de outras linguagens o array em JS é dinâmico e além como o JS é uma linguagem fracamente tipada, os tipos de dados que podem ser colocados no array são os mais variávei possíveis
 // o array no JS é uma estrutura heterogênea, mas a boa prática diz que deve fazer ele de forma homogênea, com tipos iguais
 
 console.log(typeof Array, typeof new Array, typeof [])
@@ -15,17 +15,18 @@ console.log(Aprovados)
 console.log(Aprovados[0])
 console.log(Aprovados[1])
 console.log(Aprovados[2])
-console.log(Aprovados[3]) // em outras linguagens dariam erro no JS retorna undefined
+console.log(Aprovados[3]) // em outras linguagens dariam erro no JS retorna undefined, mesmo não existindo elemento no indice 3
 
 Aprovados[3] = "Paulo" //forma válida de add um novo elemento dentro do array ou substitui-lo
 console.log(Aprovados[3])
 
 Aprovados.push("Abia")  // forma mais usual de add elemento
-console.log(Aprovados.length)
+console.log(Aprovados.length) // comprimento do array
 
-Aprovados[9] = "Rafael"
+Aprovados[9] = "Rafael" // add elemento na posição de indice 9
+
 console.log(Aprovados)
-console.log(Aprovados.length)
+console.log(Aprovados.length) // comprimento 10 do array
 console.log(Aprovados[8] === undefined) //existe o índice mas ainda está undefined
 console.log(Aprovados[8] === null)
 
@@ -33,12 +34,13 @@ console.log(Aprovados[8] === null)
 Aprovados.sort()  //.sort() causa uma alteração dentro do array modificando sua ordem, buscando deixa-lo mais ordenado
 console.log(Aprovados)
 
+//exclui o elemento do indice 1
 delete Aprovados[1] //coloca um undefined na posição, portanto, o elemento de índice 2 continua nesse índice
 console.log(Aprovados[1])
 console.log(Aprovados[2]) // continua a Bia sendo o índice 2
 
 Aprovados = ["Lis", "ju", "sakura"]
-Aprovados.splice(1, 1) // aqui está : a partir do índice 1, exclui 1 elemento
+Aprovados.splice(1, 1) // a partir do índice 1, exclui 1 elemento
 /*
 .splice() serve para algumas coisas, como :
 adicionar elemento em um determinado índice,  

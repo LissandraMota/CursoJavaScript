@@ -4,7 +4,7 @@ console.log(MeuObjeto.prototype)
 const obj1 = new MeuObjeto
 const obj2 = new MeuObjeto
 console.log(obj1.__proto__ === obj2.__proto__) // os objetos diferentes, criados pela mesma função constutora, tem seus protótipos apontando para o mesmo obj, por padrão
- console.log(MeuObjeto.prototype === obj1.__proto__)
+console.log(MeuObjeto.prototype === obj1.__proto__)
 
  MeuObjeto.prototype.nome = "Anônimo"
  MeuObjeto.prototype.falar = function() {
@@ -16,7 +16,7 @@ console.log(obj1.__proto__ === obj2.__proto__) // os objetos diferentes, criados
  obj2.nome = "Lisandra"
  obj2.falar()
 
- const obj3 = {}
+ const obj3 = {} //vriando um obj
  obj3.__proto__ = MeuObjeto.prototype
  obj3.nome = "Lis"
  obj3.falar()
@@ -25,5 +25,5 @@ console.log(obj1.__proto__ === obj2.__proto__) // os objetos diferentes, criados
  console.log((new MeuObjeto).__proto__ === MeuObjeto.prototype)
  console.log(MeuObjeto.__proto__ === Function.prototype )
  console.log(Function.prototype.__proto__ === Object.prototype)
- console.log(Object.prototype.__proto__ === null) // o atribto existe mas não aponta para nada
+ console.log(Object.prototype.__proto__ === null) // o atributo existe mas não aponta para nada
 

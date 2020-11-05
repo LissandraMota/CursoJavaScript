@@ -2,7 +2,7 @@
 // função factory é uma função que retorna um objeto
 
 //factory simples
-// dentro da função vc retorna um obj
+// função retorna um obj
 function criarPessoa() {
     return {
         nome:"Lis",

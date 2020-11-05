@@ -1,5 +1,5 @@
 // Função em JS é First-Class Object (Citizens)
-// Higher - order function
+// Higher - order function: função de alta ordem
 // JS trata a função como dado
 
 //criar função de forma literal
@@ -8,7 +8,7 @@ function fun1 () {}
 // Armazenar função em uma variável ---> pode ser let, var...
 const fun2 = function (){}  // atribui uma função anônima para ser recebida por uma constante
 
-// Armaenar função no array
+// Armazenar função no array
 const array = [function(a,b) {return a + b}, fun1, fun2]
 console.log(array[0](2, 3))
 

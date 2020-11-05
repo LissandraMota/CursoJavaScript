@@ -1,15 +1,14 @@
 function teste1(num){
     if (num > 7)
     console.log(num) //funcionou por ser uma única sentença de código mas não é aconselhavel não usar {}
-
-    console.log("Final") //não tem nenhuma relação com a sentença if, portanto sempre será executado
+   // console.log("Final") //não tem nenhuma relação com a sentença if, portanto sempre será executado
 }
 
 teste1(6)
 teste1(8)
 
 function teste2(num){
-    if (num>7); {
+    if (num>7); { // cuidado com o ; - não usar com estruturas de controle
         console.log(num)
     }
 }

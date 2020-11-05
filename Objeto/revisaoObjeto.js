@@ -1,11 +1,13 @@
 // objeto é uma coleção dinâmica de pares chave/valor
-const produto = new Object 
+const produto = new Object //criando um objeto
 produto.nome = "cadeira" //ou
 produto["marca do produto"] = "genérica"
 produto.preco = 220
 
 console.log(produto)
-delete produto.preco
+
+delete produto.preco //apagando atributos
+//também pode deletar funções
 delete produto["marca do produto"] // não pode acessr por ponto devido ter sido criado com []
 console.log(produto)
 
@@ -36,4 +38,4 @@ carro.proprietario.endereco.numero = 1000
 carro ["proprietario"] ["endereco"] ["logradouro"] = "Rua XYZ"
 console.log(carro)
 console.log(carro.condutores)
-console.log(carro.condutores.length) //comrimento do array que está dentro do obj
+console.log(carro.condutores.length) //comprimento, tamanho do array que está dentro do obj

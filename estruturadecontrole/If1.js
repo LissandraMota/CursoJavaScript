@@ -7,7 +7,7 @@ function soBoaNoticia (nota){
 
 soBoaNoticia(8.1)
 soBoaNoticia(6.1)
-// só imprimiu a nota maior ou igual 7
+// só imprimiu a nota maior ou igual 7 - aprovado (verdadeiro)
 
 function seForVerdadeEuFalo (valor) {
     if(valor) {
@@ -15,15 +15,15 @@ function seForVerdadeEuFalo (valor) {
     }
 }
 
-seForVerdadeEuFalo()
-seForVerdadeEuFalo(null)
-seForVerdadeEuFalo(undefined)
-seForVerdadeEuFalo(NaN)
-seForVerdadeEuFalo("")
-seForVerdadeEuFalo(0)
-seForVerdadeEuFalo(-1)
-seForVerdadeEuFalo(" ")
-seForVerdadeEuFalo("?")
-seForVerdadeEuFalo([])
-seForVerdadeEuFalo([1, 2])
-seForVerdadeEuFalo({})
+seForVerdadeEuFalo() //undefined é falso - não imprime
+seForVerdadeEuFalo(null) // falso
+seForVerdadeEuFalo(undefined) // falso
+seForVerdadeEuFalo(NaN)// falso
+seForVerdadeEuFalo("") //string vazia - falso
+seForVerdadeEuFalo(0) // falso
+seForVerdadeEuFalo(-1) // verdadeiro - vai imprimir
+seForVerdadeEuFalo(" ") // string preenchida (espaço vazio) - verdadeiro
+seForVerdadeEuFalo("?") // verdadeiro
+seForVerdadeEuFalo([]) // array vazio verdadeiro
+seForVerdadeEuFalo([1, 2]) // verdeiro
+seForVerdadeEuFalo({}) //objeto vazio - verdadeiro

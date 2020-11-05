@@ -18,7 +18,7 @@ produto.preco = 3.50
 console.log(produto)
 //consegue por atributo no objeto depois e com isso deixar algo de ser underfined o atributo
 
-produto.preco = undefined //evite atribuir underfined
+produto.preco = undefined //evite atribuir underfined, deixa para linguagem definir o que é undefined
 console.log(!!produto.preco)// usou o !! do boolean que colocou o undefined como falso
 //delete produto.preco
 console.log(produto)

@@ -8,6 +8,8 @@ Array.prototype.filter2 = function(callback) {
     return newArray
 }
 
+//os elementos filtrados representam um novo array
+
 const produtos = [
     {nome:"Notebook", preco:2499, fragil:true},
     {nome: "Iphone", preco:3999, fragil:true},

@@ -1,5 +1,5 @@
 //armazenando uma função m uma variável
-//aqui a função é anomina
+//aqui a função é anomina, sem nome
 const imprimirSoma = function (a, b) {
     console.log (a + b)
 }
@@ -16,7 +16,7 @@ console.log (soma(2, 3))
 
 //retorno implícito
 // => usando o símbolo para retornar, aqui o símbolo substituiu o function, {} e o return : arrow function
-const subtracao = (a, b) => a - b
+const subtracao = (a, b) => a - b //return a -b
 console.log(subtracao(2, 3))
 
 const imprimir2 = a => console.log (a)

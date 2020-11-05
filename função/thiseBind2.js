@@ -1,7 +1,7 @@
 function pessoa(){
     this.idade = 0
 
-     const self = this //substitui o this pelo self
+    const self = this //substitui o this pelo self
     
     setInterval(function(){
         self.idade++
@@ -9,4 +9,4 @@ function pessoa(){
     }/*.bind(this)*/, 1000)
 }
 
-new pessoa
+new pessoa //instancia pessoa, criando objeto

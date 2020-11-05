@@ -1,7 +1,7 @@
-let isAtivo = false
+let isAtivo = false  //JS tem literal false e true
 console.log(isAtivo)
 
-isAtivo = true
+isAtivo = true //alterando a variável para true
 console.log(isAtivo)
 
 isAtivo = 1

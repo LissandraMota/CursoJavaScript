@@ -1,5 +1,5 @@
 // Map ---> mapeia um array, para um outro array que terá o mesmo tamanho, mas com os dados transformados
-// map --> é um for com propósito
+// map --> é um for com propósito - transformação de um array
 //map --> não transforma o array atual, ele gera um novo array
 
 const nums = [1, 2, 3, 4, 5]
@@ -15,7 +15,7 @@ console.log(resultado) // array de mesmo tamanho com o valor modificado *2 --->f
 //inclusive de forma sucessiva, usando várias funções e maps
 const somar10 = e => e + 10 //função arow tem retorno implícito
 const triplo = e => e * 3
-const paraDinheiro = e => `R$ ${parseFloat(e).toFixed(2).replace(".", ",")}`
+const paraDinheiro = e => `R$ ${parseFloat(e).toFixed(2).replace(".", ",")}` //replace - substituir o ponto por virgula
 
 resultado = nums.map(somar10).map(triplo).map(paraDinheiro)
 console.log(resultado)

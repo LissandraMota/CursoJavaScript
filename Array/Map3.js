@@ -1,3 +1,4 @@
+//map "por debaixo dos panos"
 Array.prototype.map2 = function (callback) {
     const newArray = []
     for(let i = 0; i<this.length; i++) {

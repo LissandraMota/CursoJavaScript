@@ -10,13 +10,16 @@ const pessoa = {
     }
 }
 
-pessoa.falar()
+pessoa.falar() //executando aparece a saudação bom dia
 
-const falar = pessoa.falar  //armazenando uma fumction dntro de uma variável
+const falar = pessoa.falar  //armazenando uma fumction dentro de uma variável
 falar() //conflito entre paradigmas: funcional e OO
 //pode usar o bind para resolver o conflito
 
-const falarDePessoa = pessoa.falar.bind(pessoa)
+const falarDePessoa = pessoa.falar.bind(pessoa) //usando o bind para amarrar o this
 falarDePessoa()
 
 //o bind é rsponsável por amarrar um determinado objeto 
+
+const falar2 = pessoa.falar.bind(pessoa)
+falar2()

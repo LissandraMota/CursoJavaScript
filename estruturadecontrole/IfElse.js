@@ -8,5 +8,5 @@ const imprimirResultado = function(nota) {
 
 imprimirResultado(10)
 imprimirResultado(4)
-imprimirResultado("epa") //cuidado!!!por ser uma linguagem fracamente tipaa aparece como reprovado mas é uma string e não uma nota, deveria aparecer Error
+imprimirResultado("epa") //cuidado!!!por ser uma linguagem fracamente tipada aparece como reprovado mas é uma string e não uma nota, deveria aparecer Error
 
